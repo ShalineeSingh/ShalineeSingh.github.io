@@ -1,0 +1,70 @@
+:root {
+  --ss-blue: #5EA9BE;
+  --ss-light-blue: #D1E9EB;
+  --ss-pink: #C8A3C3;
+  --ss-light-pink: #CBB1C7;
+  --ss-yellow: #F5EBBA;
+  --ss-grey: #D2D6D6;
+}
+
+@font-face {
+  font-family: 'ZapfinoFont';
+  src: url('../assets/fonts/ZapfinoForteLTPro.otf');
+  src: local('Zapfino Font'), local('Zapfino-Font'), url('../assets/fonts/ZapfinoForteLTPro.otf') format('opentype');
+}
+
+.bg-blue {
+  background: var(--ss-blue);
+}
+
+.bg-light-blue {
+  background: var(--ss-light-blue);
+}
+
+.bg-pink {
+  background: var(--ss-pink);
+}
+
+.bg-light-pink {
+  background: var(--ss-light-pink);
+}
+
+.bg-yellow {
+  background: var(--ss-yellow);
+}
+
+.bg-grey {
+  background: var(--ss-grey);
+}
+
+.text-blue {
+  color: var(--ss-blue);
+}
+
+.text-light-blue {
+  color: var(--ss-light-blue);
+}
+
+.text-pink {
+  color: var(--ss-pink);
+}
+
+.text-yellow {
+  color: var(--ss-yellow);
+}
+
+.text-grey {
+  color: var(--ss-grey);
+}
+
+.size-50 {
+  font-size: 50;
+}
+
+.cursive {
+  font-family: 'ZapfinoFont', monospace;
+}
+
+.mono {
+  font-family: monospace;
+}
