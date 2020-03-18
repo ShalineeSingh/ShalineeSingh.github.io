@@ -68,3 +68,7 @@
 .mono {
   font-family: monospace;
 }
+
+.cursor-pointer {
+  cursor: pointer;
+}

@@ -15,12 +15,44 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./css/utilities.css">
     <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/menu.css">
 </head>
 
 <body>
     <div class="container-fluid p-0">
+        <!---------------------- sidebar -------------------->
+        <div class="sidebar">
+            <nav role="navigation" class="navigation">
+                <div class="menu-options">
+                    <input type="checkbox" />
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <ul class="menu-items">
+                        <a href="#home" class="mono text-blue">
+                            <li>Home</li>
+                        </a>
+                        <a href="#about" class="mono text-blue">
+                            <li>About Me</li>
+                        </a>
+                        <a href="#work" class="mono text-blue">
+                            <li>My Work</li>
+                        </a>
+                        <a href="#contact" class="mono text-blue">
+                            <li>Contact Me</li>
+                        </a>
+                    </ul>
+                </div>
+            </nav>
+            <div class="social-icons">
+                <i class="fa fa-instagram cursor-pointer"></i>
+                <i class="fa fa-linkedin-square cursor-pointer"></i>
+                <i class="fa fa-twitter-square cursor-pointer"></i>
+                <i class="fa fa-github-square cursor-pointer"></i>
+            </div>
+        </div>
         <!--------------------- Page 1 - Home ---------------------->
-        <div class="page-100 home bg-blue">
+        <div class="page-100 home bg-blue" id="home">
             <div class="row text-yellow align-items-center">
                 <div class="col-6 offset-3 typewriter">
                     <p class="display-1">Namaste...</p>
@@ -36,7 +68,7 @@
             </div>
         </div>
         <!--------------------- Page 2 - About Me ---------------------->
-        <div class="page-100 bg-pink text-yellow text-center">
+        <div class="page-100 bg-pink text-yellow text-center" id="about">
             <p class="about-text  mt-5">I’m a Front-End Developer for Coviam Technologies in Bangalore, India.
                 <br> I have a serious passion for UI effects, animations and creating intuitive, dynamic user experiences.</p>
             <div class="row justify-content-center about-row pb-4">
@@ -181,7 +213,7 @@
             </div>
         </div>
         <!--------------------- Page 3 - My work ---------------------->
-        <div class="page-100 bg-yellow">
+        <div class="page-100 bg-yellow" id="work">
             <p class="display-4 mt-2 text-pink text-center cursive m-4">My Work</p>
             <div class="row justify-content-center mb-4">
                 <div class="project-box bg-light-pink col-3 rounded mx-4 shadow"></div>
@@ -195,7 +227,7 @@
             </div>
         </div>
         <!--------------------- Page 4 - Contact Me ---------------------->
-        <div class="page-70 bg-grey">
+        <div class="page-70 bg-grey" id="contact">
             <p class="display-4 mt-2 text-blue text-center cursive m-4">Contact Me</p>
             <form>
                 <div class="row justify-content-center">
