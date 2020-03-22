@@ -55,6 +55,6 @@ window.onload = function () {
   // INJECT CSS
   var css = document.createElement("style");
   css.type = "text/css";
-  css.innerHTML = ".typewrite > .wrap {  border-right: 0.08em solid #F5EBBA; animation: blink-caret .5s step-end infinite;}";
+  css.innerHTML = ".typewrite > .wrap {  border-right: 0.08em solid #000000; animation: blink-caret .5s step-end infinite;}";
   document.body.appendChild(css);
 };

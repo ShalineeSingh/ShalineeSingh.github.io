@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="./css/utilities.css">
     <link rel="stylesheet" href="./css/base.css">
     <link rel="stylesheet" href="./css/menu.css">
+    <link rel="stylesheet" href="./css/clouds.css">
 </head>
 
 <body>
@@ -52,8 +53,47 @@
             </div>
         </div>
         <!--------------------- Page 1 - Home ---------------------->
-        <div class="page-100 home bg-blue" id="home">
-            <div class="row text-yellow align-items-center">
+        <div class="page-100 home" id="home">
+            <div class="cloud cloud1" id="cloud1-back"></div>
+            <div class="cloud cloud1" id="cloud1-mid"></div>
+            <div class="cloud cloud1" id="cloud1-front"></div>
+            <div class="cloud cloud2" id="cloud2-back"></div>
+            <div class="cloud cloud2" id="cloud2-mid"></div>
+            <div class="cloud cloud2" id="cloud2-front"></div>
+            <div class="cloud cloud3" id="cloud3-back"></div>
+            <div class="cloud cloud3" id="cloud3-mid"></div>
+            <div class="cloud cloud3" id="cloud3-front"></div>
+            <div class="cloud cloud4" id="cloud4-back"></div>
+            <div class="cloud cloud4" id="cloud4-mid"></div>
+            <div class="cloud cloud4" id="cloud4-front"></div>
+            <div class="cloud cloud5" id="cloud5-back"></div>
+            <div class="cloud cloud5" id="cloud5-mid"></div>
+            <div class="cloud cloud5" id="cloud5-front"></div>
+            <div class="cloud cloud6" id="cloud6-back"></div>
+            <div class="cloud cloud6" id="cloud6-mid"></div>
+            <div class="cloud cloud6" id="cloud6-front"></div>
+            <div class="cloud cloud7" id="cloud7-back"></div>
+            <div class="cloud cloud7" id="cloud7-mid"></div>
+            <div class="cloud cloud7" id="cloud7-front"></div>
+            <div class="cloud cloud8" id="cloud8-back"></div>
+            <div class="cloud cloud8" id="cloud8-mid"></div>
+            <div class="cloud cloud8" id="cloud8-front"></div>
+
+            <svg width="0" height="0">
+                <filter id="filter-back">
+                    <feTurbulence type="fractalNoise" baseFrequency="0.012" numOctaves="4" seed="0" />
+                    <feDisplacementMap in="SourceGraphic" scale="170" />
+                </filter>
+                <filter id="filter-mid">
+                    <feTurbulence type="fractalNoise" baseFrequency="0.012" numOctaves="2" seed="0" />
+                    <feDisplacementMap in="SourceGraphic" scale="150" />
+                </filter>
+                <filter id="filter-front">
+                    <feTurbulence type="fractalNoise" baseFrequency="0.012" numOctaves="2" seed="0" />
+                    <feDisplacementMap in="SourceGraphic" scale="100" />
+                </filter>
+            </svg>
+            <div class="row  align-items-center content-container">
                 <div class="col-6 offset-3 typewriter">
                     <p class="display-1">Namaste...</p>
                     <p class="display-1">I am Shalinee Singh.</p>

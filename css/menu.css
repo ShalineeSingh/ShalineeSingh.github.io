@@ -2,6 +2,7 @@
   position: fixed;
   height: 100vh;
   width: 130px;
+  z-index: 2;
 }
 
 .navigation {
@@ -10,7 +11,7 @@
 
 .sidebar .menu-options {
   font-size: 30px;
-  color: var(--ss-yellow);
+  color: #000000;
   position: relative;
   left: 15px;
   top: 20px;
@@ -29,7 +30,7 @@
   height: 4px;
   margin-bottom: 5px;
   position: relative;
-  background: var(--ss-yellow);
+  background: #000000;
   border-radius: 3px;
   z-index: 1;
   transform-origin: 4px 0px;
@@ -84,7 +85,7 @@
 }
 
 .menu-items a li {
-  background: var(--ss-yellow);
+  background: #000000;
   border-radius: 30px;
   width: 130px;
   right: 25px;
@@ -106,7 +107,7 @@
 .social-icons i {
   display: list-item;
   font-size: 40px;
-  color: var(--ss-yellow);
+  color: #000000;
   margin-left: 15px;
   padding-bottom: 5px;
 }

@@ -12,6 +12,16 @@
 
 .home {
   font-family: 'ZapfinoFont', monospace;
+  background: linear-gradient(0deg, #9cc2e7 0%, #5EA9BE 50%, #5EA9BE 100%);
+}
+
+.content-container {
+  position: relative;
+  top: -25px;
+}
+
+.typewrite {
+  font-size: 26px;
 }
 
 .profile-img {
@@ -57,6 +67,6 @@
     border-color: transparent
   }
   30% {
-    border-color: var(--ss-yellow)
+    border-color: #000000;
   }
 }
