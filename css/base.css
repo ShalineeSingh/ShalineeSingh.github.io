@@ -12,7 +12,11 @@
 
 .home {
   font-family: 'ZapfinoFont', monospace;
-  background: linear-gradient(0deg, #9cc2e7 0%, #5EA9BE 50%, #5EA9BE 100%);
+  background: linear-gradient(0deg, #C8A3C3 0%, #CBB1C7 10%, #5EA9BE 100%);
+}
+
+.page-2 {
+  background: linear-gradient(0deg, #F5EBBA 0%, #CBB1C7 15%, #C8A3C3 100%);
 }
 
 .content-container {
