@@ -23,7 +23,6 @@
 #cloud8-back {
   filter: url(#filter-back);
   box-shadow: 300px 300px 30px -20px #fff;
-  animation: slide 20s linear infinite;
 }
 
 /* cloud -1  */
@@ -33,7 +32,6 @@
   height: 275px;
   top: -35vh;
   left: -25vw;
-  animation: slide 20s linear infinite;
 }
 
 #cloud1-mid {
@@ -55,7 +53,6 @@
   height: 275px;
   top: -50vh;
   left: -8vw;
-  animation: slide 13s linear infinite;
 }
 
 #cloud2-mid {
@@ -77,7 +74,6 @@
   height: 105px;
   top: -20vh;
   left: -55vw;
-  animation: slide 15s linear infinite;
 }
 
 #cloud3-mid {
@@ -99,7 +95,6 @@
   height: 305px;
   top: -30vh;
   left: -80vw;
-  animation: slide 10s linear infinite;
 }
 
 #cloud4-mid {
@@ -121,7 +116,6 @@
   height: 275px;
   top: -15vh;
   left: -125vw;
-  animation: slide2x 10s linear infinite;
 }
 
 #cloud5-mid {
@@ -143,7 +137,6 @@
   height: 275px;
   top: -50vh;
   left: -110vw;
-  animation: slide2x 33s linear infinite;
 }
 
 #cloud6-mid {
@@ -165,7 +158,6 @@
   height: 205px;
   top: -10vh;
   left: -140vw;
-  animation: slide2x 15s linear infinite;
 }
 
 #cloud7-mid {
@@ -187,7 +179,6 @@
   height: 305px;
   top: -30vh;
   left: -190vw;
-  animation: slide2x 10s linear infinite;
 }
 
 #cloud8-mid {
@@ -202,6 +193,49 @@
   left: -190vw;
 }
 
+#cloud1-back,
+#cloud2-back,
+#cloud3-back,
+#cloud4-back,
+#cloud5-back,
+#cloud6-back,
+#cloud7-back,
+#cloud8-back {
+  animation: slide 20s linear infinite;
+}
+
+.cloud1 {
+  animation: slide 20s linear infinite;
+}
+
+.cloud2 {
+  animation: slide 13s linear infinite;
+}
+
+.cloud3 {
+  animation: slide 15s linear infinite;
+}
+
+.cloud4 {
+  animation: slide 10s linear infinite;
+}
+
+.cloud5 {
+  animation: slide2x 10s linear infinite;
+}
+
+.cloud6 {
+  animation: slide2x 33s linear infinite;
+}
+
+.cloud7 {
+  animation: slide2x 15s linear infinite;
+}
+
+.cloud8 {
+  animation: slide2x 10s linear infinite;
+}
+
 @keyframes slide {
   0% {
     transform: translateX(0);
@@ -211,7 +245,7 @@
   }
 }
 
-@keyframes slide {
+@keyframes slide2x {
   0% {
     transform: translateX(0);
   }

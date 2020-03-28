@@ -95,6 +95,16 @@
   font-size: 16px;
 }
 
+.menu-items a:hover {
+  text-decoration: none;
+  color: black;
+}
+
+.menu-items a li:hover {
+  background-color: var(--ss-blue);
+  box-shadow: 1px 3px 5px black;
+}
+
 .menu-options input:checked~ul {
   transform: none;
 }
@@ -107,7 +117,15 @@
 .social-icons i {
   display: list-item;
   font-size: 40px;
-  color: #000000;
   margin-left: 15px;
   padding-bottom: 5px;
+}
+
+.social-icons a {
+  color: #000000;
+}
+
+.social-icons a:hover {
+  text-decoration: none;
+  color: #000000a3;
 }

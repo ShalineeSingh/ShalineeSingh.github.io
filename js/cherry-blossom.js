@@ -1,6 +1,7 @@
 (function () {
   var pageHeight = window.innerHeight;
   var pageWidth = window.innerWidth;
+  var is_animation_in_progress = false;
 
   function randNum(min, max) {
     min = Math.ceil(min);
@@ -13,16 +14,16 @@
     this.top = opts.top;
     this.size = randNum(1.5, 6);
     this.drawFlower();
-  }
+  };
   _.prototype = {
     spinFlower: function (el) {
       var r = 0;
       var spd = Math.random() * (3 - 0.05) + 0.05;
       (function spin() {
         if (r === 350) {
-          r = 0
+          r = 0;
         } else {
-          r += spd
+          r += spd;
         }
         el.style.transform = 'rotate(' + r + 'deg)';
         requestAnimationFrame(spin);
@@ -45,9 +46,9 @@
           max_right = _this.left + randNum(20, 50);
         }
         if (direction === 'left') {
-          _this.left -= 1
+          _this.left -= 1;
         } else {
-          _this.left += 1
+          _this.left += 1;
         }
         _this.top += 2;
         el.style.top = _this.top + 'px';
@@ -59,7 +60,7 @@
       el.style.opacity = 1;
 
       (function fade() {
-        if ((el.style.opacity -= .0025) < 0) {
+        if ((el.style.opacity -= 0.0025) < 0) {
           el.parentNode.removeChild(el);
         } else {
           requestAnimationFrame(fade);
@@ -103,7 +104,7 @@
         left: '0%',
         marginLeft: -(this.size * 8) / 100 + 'vmin',
         top: (this.size * 17.5) / 100 + 'vmin'
-      }]
+      }];
     },
     get flower() {
       var flower = document.createElement('div');
@@ -132,9 +133,24 @@
       document.body.appendChild(this.flower);
     }
   };
+  $.fn.inViewport = function (cb) {
+    return this.each(function (i, el) {
+      function visPx() {
+        var elH = $(el).outerHeight(),
+          H = $(window).height(),
+          r = el.getBoundingClientRect(),
+          t = r.top,
+          b = r.bottom;
+        return cb.call(el, Math.max(0, t > 0 ? Math.min(elH, H - t) : Math.min(b, H)));
+      }
+      visPx();
+      $(window).on("resize scroll", visPx);
+    });
+  };
 
-  setInterval(() => {
-    var amt = randNum(1, 7);
+  var startAnimation = function () {
+    is_animation_in_progress = true;
+    var amt = randNum(1, 2);
     for (var i = 0; i < amt; i++) {
       var top = pageHeight + 10;
       var left = randNum(1, pageWidth);
@@ -143,5 +159,21 @@
         left: left
       });
     }
-  }, 3000);
+  };
+
+  $("#about").inViewport(function (px) {
+    console.log(px);
+    if (px > 0) {
+      setTimeout(() => {
+        if (!is_animation_in_progress) {
+          is_animation_in_progress = true;
+          setInterval(startAnimation, 3000);
+        }
+      }, 0);
+    } else {
+      is_animation_in_progress = false;
+      clearInterval(startAnimation);
+    }
+  });
+
 })();
