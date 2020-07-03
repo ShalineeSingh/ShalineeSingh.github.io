@@ -1,46 +1,46 @@
-import React from "react"
-import "./styles.scss"
+import React from "react";
+import "./styles.scss";
 
 export default function Skills() {
   const skill_list = [
     {
       name: "SCSS",
-      value: 90,
+      value: 90
     },
     {
       name: "Javascript",
-      value: 80,
+      value: 80
     },
     {
       name: "Socket.IO",
-      value: 80,
+      value: 80
     },
     {
       name: "HTML",
-      value: 75,
+      value: 75
     },
 
     {
       name: "Node Js",
-      value: 70,
+      value: 70
     },
     {
       name: "Angular Js",
-      value: 65,
+      value: 65
     },
     {
       name: "Angular 7",
-      value: 60,
+      value: 60
     },
     {
       name: "Adobe XD",
-      value: 50,
+      value: 50
     },
     {
       name: "React",
-      value: 25,
-    },
-  ]
+      value: 25
+    }
+  ];
   return (
     <div className="skills-container">
       <div className="lavender-bunch-img"></div>
@@ -71,11 +71,14 @@ export default function Skills() {
                     </div>
                   </div>
                 </li>
-              )
+              );
             })}
           </ul>
         </div>
       </div>
+      <div className="bg-right">
+        <img src={"./images/bg-2.png"} alt="flower" />
+      </div>
     </div>
-  )
+  );
 }

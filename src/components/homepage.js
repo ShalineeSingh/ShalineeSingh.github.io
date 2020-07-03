@@ -1,16 +1,19 @@
-import React from "react"
-import "./styles.scss"
-import { IconContext } from "react-icons"
+import React from "react";
+import "./styles.scss";
+import { IconContext } from "react-icons";
 import {
   FaInstagram,
   FaLinkedin,
   FaGithubSquare,
-  FaTwitterSquare,
-} from "react-icons/fa"
+  FaTwitterSquare
+} from "react-icons/fa";
 
 export default function Homepage() {
   return (
     <div className="homepage-container">
+      <div className="bg-left">
+        <img src={"./images/bg-2.png"} alt="flower" />
+      </div>
       <p className="text-center heading-2 sh-desc">
         FRONT-END DEVELOPER | PAINTER | TRAVELLER
       </p>
@@ -88,6 +91,9 @@ export default function Homepage() {
           </li>
         </ul>
       </div>
+      <div className="bg-right">
+        <img src={"./images/bg-2.png"} alt="flower" />
+      </div>
     </div>
-  )
+  );
 }

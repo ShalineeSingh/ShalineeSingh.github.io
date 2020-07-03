@@ -1,5 +1,5 @@
-import React from "react"
-import "./styles.scss"
+import React from "react";
+import "./styles.scss";
 
 export default function Education() {
   return (
@@ -35,6 +35,9 @@ export default function Education() {
           <div className="lavender-bunch-img"></div>
         </div>
         <div className="education-text experience-text col-sm-9 float-lg-right">
+          <div className="blue-patch">
+            <img src={"./images/blue-bg.png"} alt="bg" />
+          </div>
           <ul className="flower-list">
             <li>
               <div className="bullet-image"></div>
@@ -57,6 +60,9 @@ export default function Education() {
           </ul>
         </div>
       </div>
+      <div className="bg-right">
+        <img src={"./images/bg-2.png"} alt="flower" />
+      </div>
     </div>
-  )
+  );
 }

@@ -1,20 +1,23 @@
-import React from "react"
-import "./styles.scss"
-import { IconContext } from "react-icons"
-import { FaUser, FaEnvelope, FaComment } from "react-icons/fa"
+import React from "react";
+import "./styles.scss";
+import { IconContext } from "react-icons";
+import { FaUser, FaEnvelope, FaComment } from "react-icons/fa";
 
 export default class Contact extends React.Component {
   constructor(props) {
-    super(props)
-    this.submitForm = this.submitForm.bind(this)
+    super(props);
+    this.submitForm = this.submitForm.bind(this);
     this.state = {
-      status: "",
-    }
+      status: ""
+    };
   }
   render() {
-    const { status } = this.state
+    const { status } = this.state;
     return (
       <div className="contact-container">
+        <div className="bg-left">
+          <img src={"./images/bg-2.png"} alt="flower" />
+        </div>
         <div className="row text-center">
           <div className="col-md-12">
             <div className="lavender-bunch-img"></div>
@@ -27,6 +30,9 @@ export default class Contact extends React.Component {
               Don’t hesitate to let me know what went wrong. I’ll be happy to
               receive any kind of feedback.
             </p>
+            <div className="blue-patch">
+              <img src={"./images/blue-bg.png"} alt="bg" />
+            </div>
           </div>
         </div>
         <form
@@ -118,25 +124,28 @@ export default class Contact extends React.Component {
           <img src={"./images/thankyou-circle.png"} alt="thankyou" />
           <p className="thank-you-text">Thank You</p>
         </div>
+        <div className="bg-right">
+          <img src={"./images/bg-2.png"} alt="flower" />
+        </div>
       </div>
-    )
+    );
   }
   submitForm(ev) {
-    ev.preventDefault()
-    const form = ev.target
-    const data = new FormData(form)
-    const xhr = new XMLHttpRequest()
-    xhr.open(form.method, form.action)
-    xhr.setRequestHeader("Accept", "application/json")
+    ev.preventDefault();
+    const form = ev.target;
+    const data = new FormData(form);
+    const xhr = new XMLHttpRequest();
+    xhr.open(form.method, form.action);
+    xhr.setRequestHeader("Accept", "application/json");
     xhr.onreadystatechange = () => {
-      if (xhr.readyState !== XMLHttpRequest.DONE) return
+      if (xhr.readyState !== XMLHttpRequest.DONE) return;
       if (xhr.status === 200) {
-        form.reset()
-        this.setState({ status: "SUCCESS" })
+        form.reset();
+        this.setState({ status: "SUCCESS" });
       } else {
-        this.setState({ status: "ERROR" })
+        this.setState({ status: "ERROR" });
       }
-    }
-    xhr.send(data)
+    };
+    xhr.send(data);
   }
 }

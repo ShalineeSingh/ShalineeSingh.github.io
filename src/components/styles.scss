@@ -59,6 +59,23 @@ $dark-purple:#896198;
   position: relative;
   background: #f9ede9;
   min-height: 100vh;
+  .bg-right {
+    img {
+      position: absolute;
+      right: -300px;
+      top: 0;
+      opacity: 0.3;
+      transform: rotate(180deg);
+    }
+  }
+  .bg-left {
+    img {
+      position: absolute;
+      left: -350px;
+      top: 0;
+      opacity: 0.3;
+    }
+  }
   .sh-desc {
     padding-top: 100px;
     font-weight: 600;
@@ -133,6 +150,23 @@ $dark-purple:#896198;
 .about-container {
   position: relative;
   min-height: 100vh;
+  .bg-left {
+    img {
+      position: absolute;
+      left: -350px;
+      top: 0;
+      opacity: 0.6;
+    }
+  }
+  .bg-right {
+    img {
+      position: absolute;
+      right: -360px;
+      top: 0;
+      opacity: 0.6;
+      transform: rotate(180deg);
+    }
+  }
   .about-heading {
     transform: rotate(-90deg);
     position: absolute;
@@ -156,6 +190,15 @@ $dark-purple:#896198;
   &.work-container {
     position: relative;
     padding: 50px 50px 0 50px;
+    .blue-patch {
+      img {
+        position: absolute;
+        top: -200px;
+        opacity: 0.3;
+        transform: scale(0.9);
+        left: -18%;
+      }
+    }
     .about-text {
       top: 3vh;
     }
@@ -201,6 +244,24 @@ $dark-purple:#896198;
 .education-container {
   position: relative;
   padding: 50px;
+  .bg-right {
+    img {
+      position: absolute;
+      right: -360px;
+      top: 0;
+      opacity: 0.6;
+      transform: rotate(180deg);
+    }
+  }
+  .blue-patch {
+    img {
+      position: absolute;
+      top: -200px;
+      opacity: 0.3;
+      transform: scale(3);
+      left: -15%;
+    }
+  }
   .education-text {
     &.experience-text {
       position: relative;
@@ -216,6 +277,15 @@ $dark-purple:#896198;
 .skills-container {
   position: relative;
   padding: 50px;
+  .bg-right {
+    img {
+      position: absolute;
+      right: -400px;
+      top: 0;
+      opacity: 0.4;
+      transform: rotate(180deg);
+    }
+  }
   .web-designer-text {
     transform: rotate(-90deg);
     position: absolute;
@@ -255,6 +325,32 @@ $dark-purple:#896198;
 .contact-container {
   position: relative;
   padding: 50px;
+  .bg-left {
+    img {
+      position: absolute;
+      left: -350px;
+      top: 0;
+      opacity: 0.8;
+    }
+  }
+  .bg-right {
+    img {
+      position: absolute;
+      right: -360px;
+      top: 0;
+      opacity: 0.6;
+      transform: rotate(180deg);
+    }
+  }
+  .blue-patch {
+    img {
+      position: absolute;
+      top: 100px;
+      opacity: 0.3;
+      transform: scale(3);
+      left: 30%;
+    }
+  }
   .form-container {
     .btn-info {
       background-color: #a58fcf;
