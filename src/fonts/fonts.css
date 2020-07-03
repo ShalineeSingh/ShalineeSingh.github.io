@@ -1,0 +1,34 @@
+@font-face {
+  font-family: "Cocomat";
+  font-weight: 400;
+  font-style: normal;
+  src: url("../../static/fonts/Cocomat_light.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Cocomat Light";
+  font-weight: 400;
+  font-style: light;
+  src: url("../../static/fonts/Cocomat_ultralight.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: Arista;
+  font-weight: 400;
+  font-style: light;
+  src: url("../../static/fonts/Arista.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: Typewriter;
+  font-weight: 400;
+  font-style: light;
+  src: url("../../static/fonts/TravelingTypewriter.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: PreciousSoul;
+  font-weight: 400;
+  font-style: light;
+  src: url("../../static/fonts/PresciousSoul.ttf") format("truetype");
+}
