@@ -61,7 +61,7 @@ export default function Education() {
         </div>
       </div>
       <div className="bg-right">
-        <img src={"./images/bg-2.png"} alt="flower" />
+        <img src={"./images/bg-2-right.png"} alt="flower" />
       </div>
     </div>
   );

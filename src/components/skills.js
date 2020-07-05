@@ -45,7 +45,9 @@ export default function Skills() {
     <div className="skills-container">
       <div className="lavender-bunch-img"></div>
       <p className="heading-1 heading-text inline-block">Skills</p>
-      <p className="heading-1 web-designer-text inline-block">WEB DESIGNER</p>
+      <p className="heading-1 web-designer-text inline-block d-none d-md-block">
+        WEB DESIGNER
+      </p>
       <div className="row">
         <div className="col-md-9">
           <ul className="flower-list">
@@ -77,7 +79,7 @@ export default function Skills() {
         </div>
       </div>
       <div className="bg-right">
-        <img src={"./images/bg-2.png"} alt="flower" />
+        <img src={"./images/bg-2-right.png"} alt="flower" />
       </div>
     </div>
   );

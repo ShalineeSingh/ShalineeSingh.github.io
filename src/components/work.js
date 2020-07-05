@@ -103,7 +103,7 @@ export default function Work() {
         })}
         <div className="small-flower"></div>
         <div className="bg-right">
-          <img src={"./images/bg-2.png"} alt="flower" />
+          <img src={"./images/bg-2-right.png"} alt="flower" />
         </div>
       </div>
     </div>

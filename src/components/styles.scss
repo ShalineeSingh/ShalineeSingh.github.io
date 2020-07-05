@@ -82,10 +82,9 @@ $screen-sm:768px;
   .bg-right {
     img {
       position: absolute;
-      right: -300px;
+      right: 0;
       top: 0;
       opacity: 0.3;
-      transform: rotate(180deg);
     }
   }
   .bg-left {
@@ -210,10 +209,9 @@ $screen-sm:768px;
   .bg-right {
     img {
       position: absolute;
-      right: -360px;
+      right: 0;
       top: 0;
-      opacity: 0.6;
-      transform: rotate(180deg);
+      opacity: 0.4;
     }
   }
   .about-heading {
@@ -235,6 +233,9 @@ $screen-sm:768px;
     padding: 120px 10px;
     border: 1px dashed $primary;
     background-color: $light-purple;
+    @media (max-width: $screen-sm) {
+      width: 75%;
+    }
   }
   .orange-flower-img {
     transform: rotate(90deg);
@@ -242,6 +243,9 @@ $screen-sm:768px;
     position: relative;
     top: 120px;
     left: 39%;
+    @media (max-width: $screen-sm) {
+      left: 0;
+    }
   }
   &.work-container {
     position: relative;
@@ -318,10 +322,12 @@ $screen-sm:768px;
   .bg-right {
     img {
       position: absolute;
-      right: -360px;
+      right: -200px;
       top: 0;
       opacity: 0.6;
-      transform: rotate(180deg);
+      @media (max-width: $screen-sm) {
+        right: 0;
+      }
     }
   }
   .blue-patch {
@@ -362,10 +368,12 @@ $screen-sm:768px;
   .bg-right {
     img {
       position: absolute;
-      right: -400px;
+      right: -200px;
       top: 0;
       opacity: 0.4;
-      transform: rotate(180deg);
+      @media (max-width: $screen-sm) {
+        right: 0;
+      }
     }
   }
   .web-designer-text {
@@ -435,10 +443,12 @@ $screen-sm:768px;
   .bg-right {
     img {
       position: absolute;
-      right: -360px;
+      right: -100px;
       top: 0;
       opacity: 0.6;
-      transform: rotate(180deg);
+      @media (max-width: $screen-sm) {
+        right: 0;
+      }
     }
   }
   .blue-patch {
@@ -448,6 +458,9 @@ $screen-sm:768px;
       opacity: 0.3;
       transform: scale(3);
       left: 30%;
+      @media (max-width: $screen-sm) {
+        transform: scale(1);
+      }
     }
   }
   .form-container {
