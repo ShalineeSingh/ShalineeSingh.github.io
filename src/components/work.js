@@ -83,7 +83,7 @@ export default function Work() {
           return (
             <div key={project.name} className="col-md-6 project-container">
               {i % 2 !== 0 && i !== 1 ? (
-                <div className="blue-patch">
+                <div className="blue-patch d-none d-md-block">
                   <img src={"./images/blue-bg.png"} alt="bg" />
                 </div>
               ) : (

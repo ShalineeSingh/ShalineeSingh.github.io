@@ -30,12 +30,12 @@ export default function Education() {
         </div>
       </div>
       <div className="row">
-        <div className="col-sm-12 text-right pr-5">
+        <div className="col-sm-12 experience-heading">
           <p className="heading-1 heading-text inline-block">Experience</p>
           <div className="lavender-bunch-img"></div>
         </div>
         <div className="education-text experience-text col-sm-9 float-lg-right">
-          <div className="blue-patch">
+          <div className="blue-patch d-none d-md-block">
             <img src={"./images/blue-bg.png"} alt="bg" />
           </div>
           <ul className="flower-list">

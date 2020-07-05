@@ -51,13 +51,13 @@ export default function Skills() {
           <ul className="flower-list">
             {skill_list.map((skill, i) => {
               return (
-                <li className="row">
+                <li className="row" key={skill.name}>
                   <div className="bullet-image"></div>
                   <div className="skill-li col-sm-11 px-0">
-                    <div className="col-sm-4 heading-2">
+                    <div className="col-md-4 col-sm-8 heading-2">
                       <span>{skill.name}</span>
                     </div>
-                    <div className="col-sm-6">
+                    <div className="col-md-6 d-none d-md-block">
                       <div className="progress-bar-wrapper">
                         <div
                           className="progress-bar"
@@ -66,7 +66,7 @@ export default function Skills() {
                         ></div>
                       </div>
                     </div>
-                    <div className="col-sm-2 heading-2">
+                    <div className="col-md-2 heading-2 progress-text">
                       <span>{skill.value}%</span>
                     </div>
                   </div>

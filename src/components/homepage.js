@@ -27,9 +27,7 @@ export default function Homepage() {
       <div className="small-flower"></div>
       <div className="row mt-5">
         <div className="col-sm-7 profile-text-wrapper">
-          <p className="hello-text col-sm-10 pr-3 text-right heading-3">
-            Hello! I'm
-          </p>
+          <p className="hello-text col-sm-10 pr-3 heading-3">Hello! I'm</p>
           <p className="heading-text heading-1 text-right">Shalinee Singh</p>
         </div>
         <div className="profile-img-wrapper col-sm-5">
@@ -44,8 +42,8 @@ export default function Homepage() {
       {/* <img src={'./images/shalinee.jpg'} alt="shalinee singh" className="profile-img"/> */}
       {/*  */}
       <div className="social-icons-wrapper">
-        <ul class="list-group">
-          <li class="list-group-item">
+        <ul className="list-group">
+          <li className="list-group-item">
             <a
               href="https://www.instagram.com/shalinee.singh/"
               target="_blank"
@@ -56,7 +54,7 @@ export default function Homepage() {
               </IconContext.Provider>
             </a>
           </li>
-          <li class="list-group-item">
+          <li className="list-group-item">
             <a
               href="https://www.linkedin.com/in/shalinee-singh/"
               target="_blank"
@@ -67,7 +65,7 @@ export default function Homepage() {
               </IconContext.Provider>
             </a>
           </li>
-          <li class="list-group-item">
+          <li className="list-group-item">
             <a
               href="https://github.com/ShalineeSingh"
               target="_blank"
@@ -78,7 +76,7 @@ export default function Homepage() {
               </IconContext.Provider>
             </a>
           </li>
-          <li class="list-group-item">
+          <li className="list-group-item">
             <a
               href="https://twitter.com/shalinee43"
               target="_blank"
