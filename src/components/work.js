@@ -58,6 +58,13 @@ export default function Work() {
         "This Google Chrome extension uses the camera and tracks the gestures of the hand. It can be used to scroll pages with the vertical movement of the hand and go forward/backward in the tab history using the horizontal movements. This is extremely useful while browsing long scrolling websites.",
       img: "./images/gesture-detection.png",
       link: "https://github.com/ShalineeSingh/gesture_detection"
+    },
+    {
+      name: "Bookstore Website Design",
+      desc:
+        "Designed a website for a bookstore which contains the details about their collection and the recent additions in their store.",
+      img: "./images/bookstore.png",
+      link: "https://github.com/ShalineeSingh/gesture_detection"
     }
   ];
   return (
