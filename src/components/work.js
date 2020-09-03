@@ -64,7 +64,7 @@ export default function Work() {
       desc:
         "Designed a website for a bookstore which contains the details about their collection and the recent additions in their store.",
       img: "./images/bookstore.png",
-      link: "https://github.com/ShalineeSingh/gesture_detection"
+      link: "https://photos.app.goo.gl/aaiTCJy97jqUH5UP9"
     }
   ];
   return (
